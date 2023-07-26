@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00bcd4"
+    android:id="@+id/arkaplan"
+    tools:context=".rgbf">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Redyazisi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#E60F0F"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:text="Red" />
+
+
+        <SeekBar
+            android:id="@+id/redbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255"
+            android:progress="0"
+            android:progressDrawable="@android:drawable/ic_media_play"
+            android:thumb="@android:drawable/btn_default_small"
+            android:thumbTint="#F60C0C" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/blueyazisi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250dp"
+                android:gravity="center"
+                android:text="Blue"
+                android:textColor="#214ADD"
+                android:textSize="18dp" />
+
+            <SeekBar
+                android:id="@+id/bluebar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="255"
+                android:progress="205"
+                android:progressDrawable="@android:drawable/ic_media_play"
+                android:thumb="@android:drawable/btn_default_small"
+                android:thumbTint="#214ADD" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/greenyazisi"
+            android:layout_marginTop="130dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Green"
+            android:textColor="#078E0C"
+            android:textSize="18dp" />
+
+        <SeekBar
+            android:id="@+id/greenbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255"
+            android:progress="183"
+            android:progressDrawable="@android:drawable/ic_media_play"
+            android:thumb="@android:drawable/btn_default_small"
+            android:thumbTint="#078E0C" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/renkkodu"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="130dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#00bcd4"
+        android:textSize="36dp"/>
+</FrameLayout>

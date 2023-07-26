@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="410dp"
+    android:layout_height="wrap_content"
+    android:background="#00bcd4"
+    android:orientation="vertical"
+    tools:context=".fragmentekran">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_marginLeft="155dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00bcd4"
+        android:text="MENU"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="681dp"
+        android:orientation="vertical">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView12"
+            android:name="com.example.odevfinal.fragacilis"
+            android:layout_width="match_parent"
+            android:layout_height="681dp"
+            tools:layout="@layout/fragment_fragacilis" />
+    </LinearLayout>
+
+</LinearLayout>
